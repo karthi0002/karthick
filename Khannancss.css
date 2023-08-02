@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+
+
+
+.nav{
+	display:flex;
+	justify-content:ceter;
+	text-align:center;
+	height:20vh;
+	margin:50px,  10px;
+}
+.nav,h4, a{
+	color: darkblue;
+	font-size:20px;
+	text-decoration:none;
+	padding:0 2rem;
+	margin:3px;
+}
+
+
+
+#menu-btn {
+	display: none;
+} 
+
+span{
+	color: darkblue;
+}
+
+header, .nav, .service{
+	color: darkblue;
+	border: none;
+	font-size: 20px;
+}
+
+header,  .nav, .service,option {
+	padding:2px 5px;
+	margin: 2px ;
+}
+
+.submit1 {
+  color:  white;
+  background: #8A2BE2;
+  width: 94%;
+  border: 3px solid gray;
+  border-radius: 3px;
+  padding: 20px;  
+  background-color: red;
+  padding: 20px;
+}
+
+.form {
+  width: 250px;
+  height: 945px;
+  margin: auto;
+  border: 3px solid gray;
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.form, input{
+	width:90%;
+	padding:20px;
+	border-color: 1px solid color green; 
+}
+
+.form, select{
+	width:93%;
+	padding:25px;
+}
+
+.container, p{
+	color: gray;
+}
+/* Finance Items carts*/
+
+.review, .box {
+	display:grid;
+}
+
+
+.review, .box, .pic{
+	width: 80%;
+	height: 80%;
+	padding: 2rem ;
+}
+
+
+.review, .box, p {
+	font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: #ccc;
+    padding: 2rem 0;
+}
+
+.review, .box, h3 {
+	padding: 1rem 0;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.review, h3{
+	color: darkblue;
+}
+
+.review, .box, .rev {
+	color: red;
+}
+
+/*business webpage container*/
+
+/*.container, .rows {
+  position:relative;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 30px 0;
+  font-style: italic;
+  padding: 20px 30px;
+  background: #feefe8;
+  color: #c42a30;
+}*/
+
+/*.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
+	display: grid;
+	position:relative;
+	border: 1px solid gray;
+	border-radius: 145px ;
+}*/
+
+.rows, .box {
+	display:grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	position: relative;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.box {
+	border: 2px solid red;
+	border-radius: 50px;
+	background-color: orange;
+}
+
+.box, .pic {
+	width:90%;
+	height: 90%;
+	margin-bottom: 2.4rem;
+}
+
+
+
+/* Media query*/
+
+@media(max-width:991px){
+    html{
+        font-size: 80%;
+    }
+
+    header{
+        padding: 1.5rem 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+
+ @media(max-width:768px){
+	 #menu-btn{
+		 display:inline-block;
+	 }
+	 .nav{
+		 display: grid;
+		 position:absolute;
+		 top:250px; right:-100%;
+		 background:pink;
+		 width:20rem;
+		 height:calc(100vh - 9.5rem);
+	 }
+	 .nav.active{
+		 right:0;
+	 }
+	 header{
+		 display: block;
+		 margin:1.5rem;
+		 padding: .5rem;
+		 font-size: 2rem;
+	 }
+ }
+ 
+ @media(max-width:450px){
+	 html{
+		 font-size:50%;
+	 }
+ }
+ 
